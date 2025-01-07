@@ -1,14 +1,20 @@
 #include <stdio.h>
 
 int main () {
-  char [20] nome;
+
+  char nome [20] = "alice";
   float idade;
   double salario;
-    nome = 'alice';
+  int tempo;
     idade = 25;
-    salario = 4500.55
+    salario = 4500.55;
 
-  printf ("%s %f %f", nome, idade, salario)
+  printf("nome: %s\n", nome);
+  printf("idade: %.0f anos\n", idade);
+  printf("salario: %.2f reais\n", salario);
+  printf("tempo restante para trabalho: ");
+  scanf("%d", &tempo);
+  printf("minutos\n");
 
     return 0;
 
