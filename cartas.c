@@ -7,18 +7,26 @@ char nome [20] = "Leonny";
 int idade;
 float altura;
 double salario;
-int confirmado = 1;
-int negado = 0;
+char confirmar;
+char UF[20];
+
 
 inicial = 'A';  
 idade = 28;
 altura = 1.69;
 salario = 3300.40;
+int cpf = 0;
+printf("Inicial: %c\n", inicial);
+printf("Nome: %s\n", nome);
+printf("Idade: %d\n", idade);
+printf("Altura: %.2f\n", altura);
+printf("Salario: %.2f\n", salario);
+printf("Entre com os três primeiros dígitos dos CPF e UF: \n");
+scanf("%d %s", &cpf, UF);
+printf("Confirma o número %d? (S|N)\n", cpf);
+scanf(" %c", &confirmar);
+printf("Resposta: %c\n", confirmar);
 
-printf("Inicial: %c\nNome: %s\nIdade: %d\nAltura: %.2f\nSalario: %.2f\n", inicial, nome, idade, altura, salario);
-printf("Os dados acima estão corretos? ");
-scanf("%d", &confirmado); 
-printf("Resposta aceita.\n");
 return 0;
 
 
